@@ -7,41 +7,46 @@ package es.cide.programacio;
 public class Main {
     public static void main(String[] args) {
     System.out.println("Exercici 1: Indica els identificadors correctes");
-        int registro1;
-        //int 1registro;              //No pot començar amb un nombre
-        int archivo_3; 
-        //int while;                  //while és una paraula reservada
-        int $impuesto;
-        //int año;gtrvgtrtgr
-        //int primer apellido;        //No pot contenir espais
-        int primere_apellido;
-        //int primer-apellido;        //No pot contenir guions
-        int primerApellido;
-        //int Tom's;'                 //No pot contenir caràcters especials
-        int C3PO;
-        //int 123#;                   //No pot contenir caràcters especials
-        int PesoMáximo;
-        //int %descuento;             //No pot començar amb aquyuest caràcter '%' ja que s'utilitza per a operacions (mòdul)
-        int Weight;
-        int $$precioMínimo;
-        int _$Único;
-        int tamaño_màximo;
-        int peso_maximo;
-        int Precio___;
-        //int matrícula?; //El caràcter '?' s¡utilitza
-        int cuántoVale;
-        int high;
-        int barça;
-        int piragüista;
-        int B_011;
-        int X012AB;
-        //int 70libro; //No pot començar amb un nombre
-        //int nombre&apellido;
-        //int 0X1A; //No pot començar amb un nombre
-        //int else; //Paraula reservada (utilitzada en diferents funcions com if, switch, etc)
+        double registro1;
+        //double 1registro;              //No pot començar amb un nombre
+        double archivo_3; 
+        //double while;                  //while és una paraula reservada
+        double $impuesto;
+        //double año;gtrvgtrtgr
+        //double primer apellido;        //No pot contenir espais
+        double primere_apellido;
+        //double primer-apellido;        //No pot contenir guions
+        double primerApellido;
+        //double Tom's;'                 //No pot contenir caràcters especials
+        double C3PO;
+        //double 123#;                   //No pot contenir caràcters especials
+        double PesoMáximo;
+        //double %descuento;             //No pot començar amb aquyuest caràcter '%' ja que s'utilitza per a operacions (mòdul)
+        double Weight;
+        double $$precioMínimo;
+        double _$Único;
+        double tamaño_màximo;
+        double peso_maximo;
+        double Precio___;
+        //double matrícula?; //El caràcter '?' s¡utilitza
+        double cuántoVale;
+        double high;
+        double barça;
+        double piragüista;
+        double B_011;
+        double X012AB;
+        //double 70libro; //No pot començar amb un nombre
+        //double nombre&apellido;
+        //double 0X1A; //No pot començar amb un nombre
+        //double else; //Paraula reservada (utilitzada en diferents funcions com if, switch, etc)
         System.out.println("Variables correctes");
 
+
+//---------------------------------------------------------------------------------------------------------------   
+
+
         System.out.println("Exercici 2: Identifica els literals correctes");
+        //1
         double A2 = 0.5;
         System.out.println(A2 + " A2");
         double B2 = .5;
@@ -50,46 +55,144 @@ public class Main {
         System.out.println(C2 + " C2");
         double D2 = 9.3e-12;
         System.out.println(D2 + " D2");
-        int E2 = 12345678;
+        double E2 = 12345678;
         System.out.println(E2 + " E2");
         //double F2 = 12345678_L; //L no s'usa en el fromat hexadecimal
         //System.out.println(F2);
         //double G2 = 0.8E+0.8; //Punt.
         //System.out.println(G2);
-        int H2 = 05_15;
+        double H2 = 05_15;
         System.out.println(H2 + " H2");
-        long I2 = 018CDF;
-        System.out.println(I2 + " I2");
-        int J2 = 0XBC5DA;
+        /*long I2 = 018CDF; //fff
+        System.out.println(I2 + " I2");*/
+        double J2 = 0XBC5DA;
         System.out.println(J2 + " J2");
-        int K2 = 0x87e3a;
+        double K2 = 0x87e3a;
         System.out.println(K2 + " K2");
-        int L2 = 234567L;
+        double L2 = 234567L;
         System.out.println(L2 + " L2");
-        int M2 = 0_B11;
-        System.out.println(M2 + " M2");
-        int N2 = 010101;
+        /*double M2 = 0_B11; //la barra baixa ha d'estar entre nombres
+        System.out.println(M2 + " M2");*/
+        double N2 = 010101;
         System.out.println(N2 + " N2");
-        int O2 = 0_557;
+        double O2 = 0_557;
         System.out.println(O2 + " O2");
-        int P2 = .00.8E2;
-        System.out.println(P2 + " P2");
-        int Q2 = .3e3f;
+        /*double P2 = .00.8E2; //no és vàlid posar dos punts
+        System.out.println(P2 + " P2");*/
+        double Q2 = .3e3f;
         System.out.println(Q2 + " Q2");
-        int R2 = 0b111;
+        double R2 = 0b111;
         System.out.println(R2 + " R2");
-        int S2 = 12_234L;
+        double S2 = 12_234L;
         System.out.println(S2 + " S2");
-        int T2 0Xabcd;
+        double T2 = 0Xabcd; //
         System.out.println(T2 + " T2");
-        int U2 = _234;
+        double U2 = _234;
         System.out.println(U2 + " U2");
-        int V2 = 1010B;
-        System.out.println(V2 + " V2");
-        int W2 = 0x1010B;
-        
+        /*double V2 = 1010B; //'B' no pertany a aquest format
+        System.out.println(V2 + " V2");*/
+        //21
+        double W2 = 0x1010B;
+        System.out.println(W2 + " W2");
+        double X2 = 1_234.2E-2;
+        System.out.println(X2 + " X2");
+        /*double Y2 = 1234.2EF; //el punt no hauria de ser aquí
+        System.out.println(Y2 + " Y2");*/
+        double Z2 = 1234.2E3F;
+        System.out.println(Z2 + " Z2");
+        double A22 = 1234.2E3F;
+        System.out.println(A22 + " A22");
+        /*double B22 = 1_1.2e_2; //la barra baixa ha d'estar entre nombres
+        System.out.println(B22 + " B22");
+        double C22 = 0bABCDL; // 'L' no pertany a aquest format
+        System.out.println(C22 + " C22");*/
+        double D22 = 0X1A;
+        System.out.println(D22 + " D22");
+        double E22 = 0X12AL;
+        System.out.println(E22 + " E22");
+        /*double F22 = abcd; //no és un literal
+        System.out.println(F22 + " F22");*/
+        double G22 = 0125;
+        System.out.println(G22 + " G22");
+        double H22 = .01011;
+        System.out.println(H22 + " H22");
+        double I22 = 3e12;
+        System.out.println(I22 + " I22");
+        double J22 = 3_e12; //la barra baixa ha d'estar entre nombres
+        System.out.println(J22 + " J22");
+        double K22 = -3E-1_2;
+        System.out.println(K22 + " K22");
+        double L22 = 0.8E; //Punttt
+        System.out.println(L22 + " L22");
+        double M22 = 0B1212; //Que
+        System.out.println(M22 + " M22");
+        double N22 = 1_2_3;
+        System.out.println(N22 + " N22");
+        double O22 = 0xedad;
+        System.out.println(O22 + " O22");
+        double P22 = 0XBE2;
+        System.out.println(P22 + " P22");
+        double Q22 = 101e2;
+        System.out.println(Q22 + " Q22");
+        double R22 = B1101;
+        System.out.println(R22 + " R22");
+        double S22 = 1.34.5; //Puntttt
+        System.out.println(S22 + " S22");
+        double T22 = 12.3E4F;
+        System.out.println(T22 + " T22");
+        double U22 = 0X12AG; //'G' no pertany a aquest format
+        System.out.println(U22 + " U22");
         
 
+        //---------------------------------------------------------------------------------------------------------------   
+
+
+        System.out.println("Exercici 3: Exercicis de literals del tipus “char”");     
+        char a3 = 'a';
+        System.out.println(a3 + " a3");
+        char b3 = '$';
+        System.out.println(b3 + " b3");
+        char c3 = '\n';
+        System.out.println(c3 + " c3");
+        char d3 = '/n'; //l'ús de /n està limitat al salt de línia, s'hauria de fer servir un altre caràcter//
+        System.out.println(d3 + " d3");
+        char e3 = '\\';
+        System.out.println(e3 + " e3");
+        char f3 = '\ñ'; //No existeix el caràcter \ñ
+        System.out.println(f3 + " f3");
+        char g3 = 'T';
+        System.out.println(g3 + " g3");
+        char h3 = 'ñ';
+        System.out.println(h3 + " h3");
+        char i3 = 'xyz';
+        System.out.println(i3 + " i3");
+        char j3 = '\u0066';
+        System.out.println(j3 + " j3");
+        char k3 = 'XYZ';
+        System.out.println(k3 + " k3");
+        char l3 = '4';
+        System.out.println(l3 + " l3");
+        char m3 = '\t';
+        System.out.println(m3 + " m3");
+        char n3 = '\b';
+        System.out.println(n3 + " n3");
+        char o3 = k;
+        System.out.println(o3 + " o3");
+        char p3 = +;
+        System.out.println(p3 + " p3");
+        char q3 = '+';
+        System.out.println(q3 + " q3");
+        char r3 = '?';
+        System.out.println(r3 + " r3");
+        char s3 = 'â';
+        System.out.println(s3 + " s3");
+        char t3 = ':';
+
+
+        //---------------------------------------------------------------------------------------------------------------
+
+
+        System.out.println("Exercici 3: Exercicis de literals del tipus “char”");
 
 
     }
