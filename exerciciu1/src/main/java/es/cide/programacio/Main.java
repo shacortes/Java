@@ -168,7 +168,7 @@ public class Main {
         System.out.println(i3 + " i3");
         char j3 = '\u0066';
         System.out.println(j3 + " j3");
-        char k3 = 'XYZ';
+        char k3 = 'XYZ';//Només pot contenir un caràcter
         System.out.println(k3 + " k3");
         char l3 = '4';
         System.out.println(l3 + " l3");
