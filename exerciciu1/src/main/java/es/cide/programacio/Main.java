@@ -230,6 +230,7 @@ public class Main {
         //---------------------------------------------------------------------------------------------------------------
 
 
+<<<<<<< HEAD
         System.out.println("Exercici 3: Exercicis de literals del tipus “char”");
         char a3 = 'a';
         System.out.println("a3 " + a3);
@@ -378,6 +379,67 @@ public class Main {
         boolean primero = true, ultimo = false;
         System.out.println("primero= " + primero + ", " + "ultimo= " + ultimo);
 
+=======
+        System.out.println("Exercici 4: Exercicis sobre strings");
+        String a4 = '8:15 P.M.';
+        System.out.println(a4 + " a4");
+        String b4 = "Rojo, Blanco y Azul";
+        System.out.println(b4 + " b4");
+        //String c4 = "Nombre:; //falta una cometa
+        System.out.println(c4 + " c4");
+        String d4 = "Capítulo \’3\’";
+        System.out.println(d4 + " d4");
+        String e4 = "1.3e-1-2";
+        System.out.println(e4 + " e4");
+        String f4 = "";
+        System.out.println(f4 + " f4");
+        String g4 = " ";
+        System.out.println(g4 + " g4");
+        String h4 = "A";
+        System.out.println(h4 + " h4");
+        //String i4 = "FP';
+        System.out.println(i4 + " i4");
+        String j4 = " programación ";
+        System.out.println(j4 + " j4");
+        String k4 = "programación "Java"";
+        System.out.println(k4 + " k4");
+        String l4 = programación;
+        System.out.println(l4 + " l4");
+        String m4 = "W";
+        System.out.println(m4 + " m4");
+        String n4 = "\n";
+        System.out.println(n4 + " n4");
+        String o4 = "4+5*2";    
+        System.out.println(o4 + " o4");
+
+
+        //---------------------------------------------------------------------------------------------------------------
+
+
+        System.out.println("Exercici 4: Declara les següents variables");
+        int p=1, q=2;
+        System.out.println("p= " + p + ", " + "q= " + q);
+        float x=2.1, y=2.3, z=3.1;
+        System.out.println("x= " + x + ", " + "y= " + y + ", " + "z= " + z);
+        char a='A', b='B', c='C';
+        System.out.println("a= " + a + ", " + "b= " + b + ", " + "c= " + c);
+        double raiz1=300.1, raiz2=200.2;
+        System.out.println("raiz1= " + raiz1 + ", " + "raiz2= " + raiz2);
+        long contador= 123456789000;
+        System.out.println("contador= " + contador);
+        short indicador = 127; 
+        System.out.println("indicador= " + indicador);
+        int indice = 1234123;
+        System.out.println("indice= " + indice);
+        double precio = 123.45, precioFinal = 234.56;
+        System.out.println("precio= " + precio + ", " + "precioFinal= " + precioFinal);
+        char car1 = 'S', car2 = 'N';
+        System.out.println("car1= " + car1 + ", " + "car2= " + car2);
+        byte valor = 100;
+        System.out.println("valor= " + valor);
+        boolean primero = true, ultimo = false;
+        System.out.println("primero= " + primero + ", " + "ultimo= " + ultimo);
+>>>>>>> ad04d918e48d4a11db5ffd4a6ecd5e971148a7a7
         String nombre = "Sergi";
         System.out.println("nombre= " + nombre);
 
@@ -385,6 +447,7 @@ public class Main {
         //---------------------------------------------------------------------------------------------------------------
 
 
+<<<<<<< HEAD
         System.out.println("Exercici 6: Declara aquestes variables");
         double edad = 30; //por si acaso e necesario especificar los meses de edad
         System.out.println("edad= " + edad);
@@ -396,6 +459,19 @@ public class Main {
         System.out.println("género= " + género);
         String nombre1 = "Sergi";
         System.out.println("nombre= " + nombre1);
+=======
+        System.out.println("Exercici 5: Declara aquestes variables");
+        double edad = 30; //por si acaso e necesario especificar los meses de edad
+        System.out.println("edad= " + edad);
+        int códigoPostal = 07013; 
+        System.out.println("códigoPostal= " + códigoPostal);
+        float altura = 1.75;
+        System.out.println("altura= " + altura);
+        char género = 'H';
+        System.out.println("género= " + género);
+        String nombre = "Sergi";
+        System.out.println("nombre= " + nombre);
+>>>>>>> ad04d918e48d4a11db5ffd4a6ecd5e971148a7a7
         byte númeroDeHijos = 2; //suponinendo que no tiene más de 127 hijos
         System.out.println("númeroDeHijos= " + númeroDeHijos);
         byte iva = 21;
@@ -404,8 +480,13 @@ public class Main {
         System.out.println("tallaCamisa= " + tallaCamisa);
         int peso = 75;
         System.out.println("peso= " + peso);
+<<<<<<< HEAD
         double precio1 = 19.95;
         System.out.println("precio= " + precio1);
+=======
+        double precio = 19.95;
+        System.out.println("precio= " + precio);
+>>>>>>> ad04d918e48d4a11db5ffd4a6ecd5e971148a7a7
         boolean alumnoRepetidor = false;
         System.out.println("alumnoRepetidor= " + alumnoRepetidor);
         String mensaje = "Java";
@@ -420,8 +501,12 @@ public class Main {
         System.out.println("dias= " + dias);
         String matriculaCoche = "1234 ABC";
         System.out.println("matriculaCoche= " + matriculaCoche);
+<<<<<<< HEAD
         int contador1 = 0;
         System.out.println("contador1= " + contador1);
+=======
+        int contador = 0;
+>>>>>>> ad04d918e48d4a11db5ffd4a6ecd5e971148a7a7
         boolean mayorDeEdad = true;
         System.out.println("mayorDeEdad= " + mayorDeEdad);
         String tallaCamiseta = "M";
@@ -429,6 +514,7 @@ public class Main {
 
 
 
+<<<<<<< HEAD
 
         //---------------------------------------------------------------------------------------------------------------
 
@@ -694,6 +780,16 @@ public class Main {
         System.out.println("x) " + ((3 * i1 - 2 * j1) % (2 * d3 - c3) > 3 * d3)); //false
         System.out.println("y) " + (2 * ((i1 / 5) + (4 * (j1 - 3)) % (i1 + j1 - 2)) >= 10)); // true
         System.out.println("z) " + ((i1 - 3 * j1) % (c3 + 2 * d3) / (x8 - y) >= 0)); // false
+=======
+        //---------------------------------------------------------------------------------------------------------------
+
+
+        System.out.println("Exercici 6: Convertir les expressions algebràiques a algotímiques");
+        int a, b, c;
+        double resultat1;
+        resultat1 = b/2
+
+>>>>>>> ad04d918e48d4a11db5ffd4a6ecd5e971148a7a7
 
 
     }
