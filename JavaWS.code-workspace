@@ -1,3 +1,10 @@
 {
-	"folders": []
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"java.debug.settings.onBuildFailureProceed": true
+	}
 }
