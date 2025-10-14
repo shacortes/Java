@@ -1,3 +1,8 @@
+/*Nom: Sergi Hui Amorós Cortés
+ * DNI: 46395575K
+ * Data: 09/10/2025
+*/
+
 package es.cide.programacio;
 import java.util.Scanner;
 
