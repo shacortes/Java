@@ -7,12 +7,18 @@ public class Main {
 
     public static void main(String[] args) {
         Random insultsAleatoris = new Random();
+        Random respostesIncorrectes = new Random();
         int vides = 3;
         char continuacio = 'y';
         System.out.println("Quantes rondes vols jugar?");
         Scanner sc = new Scanner(System.in);
         int respIncAleat = 0;
         int insult = 0;
+        int resposta = 0;
+        int respostaNumJugador = -1;
+        boolean cercantResposta = true;
+        int a = 0;
+        String respostaString = "Hola";
         String[] insults = {"¡Has dejado ya de usar pañales?",
             "¡No hay palabras para describir lo asqueroso que eres!",
             "¡He hablado con simios más educados que tú!",
@@ -33,7 +39,7 @@ public class Main {
             "Y yo tengo un SALUDO para ti, ¿te enteras?",
             "Te habrá enseñado todo lo que sabes.",
             "¿TAN rápido corres?"};
-        String[] respostesIncorrectes = {"¿Por qué? ¿Acaso querías pedir uno prestado?",
+        /*String[] respostesIncorrectes = {"¿Por qué? ¿Acaso querías pedir uno prestado?",
             "Sí que las hay, sólo que nunca las has aprendido.",
             "Me alegra que asistieras a tu reunión familiar diaria.",
             "Primero deberías dejar de usarla como un plumero.",
@@ -42,7 +48,7 @@ public class Main {
             "Ah, ¿ya has obtenido ese trabajo de barrendero?",
             "Y yo tengo un SALUDO para ti, ¿te enteras?",
             "Te habrá enseñado todo lo que sabes.",
-            "¿TAN rápido corres?"};
+            "¿TAN rápido corres?"};*/
         System.out.println("Quantes rondes vols jugar? Si vols sortir prem 0");
         int rondes = sc.nextInt();
         if (rondes >= 0) {
@@ -50,8 +56,27 @@ public class Main {
             for (int i = 0; i < rondes && continuacio != 'n' && vides > 0; i++) {
                 insult = insultsAleatoris.nextInt(9);
                 System.out.println("Pirata: " + insults[insult]);
+                respostaString = insults[insult];
                 System.out.println("Tria la teva resposta!");
+                System.out.println("Jugador: " + respostesJugador[insult]);
                 
+                while (cercantResposta && a < 2){
+                    respIncAleat = respostesIncorrectes.nextInt(9);
+                    if (respIncAleat != insult){
+                        System.out.println(respostesJugador[respIncAleat]);
+                        a++;
+                    } else if (respIncAleat == insult){
+                        System.out.println("no");
+                    }
+                }
+
+                respostaNumJugador = sc.nextInt();
+
+
+
+
+
+                if (respostaNumJugador == a);
             }
         } else if (rondes < 0) {
             System.out.println("El nombre de rondes ha de ser positiu.");
