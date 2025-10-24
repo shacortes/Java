@@ -1,0 +1,118 @@
+package es.cide.programacio;
+
+import java.util.Random;
+import java.util.Scanner;
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class Main {
+
+    public static void main(String[] args) {
+        // ...existing code...
+        Random rnd = new Random();
+        Scanner sc = new Scanner(System.in);
+
+        int vides = 3;
+        char continuacio = 'y';
+
+        String[] insults = {"¡Has dejado ya de usar pañales?",
+            "¡No hay palabras para describir lo asqueroso que eres!",
+            "¡He hablado con simios más educados que tú!",
+            "¡Llevarás mi espada como si fueras un pincho moruno!",
+            "¡Luchas como un ganadero!",
+            "¡No pienso aguantar tu insolencia aquí sentado!",
+            "¡Mi pañuelo limpiará tu sangre!",
+            "¡Ha llegado tu HORA, palurdo de ocho patas!",
+            "¡Una vez tuve un perro más listo que tú!",
+            "¡Nadie me ha sacado sangre jamás, y nadie lo hará!"};
+        String[] respostesJugador = {"¿Por qué? ¿Acaso querías pedir uno prestado?",
+            "Sí que las hay, sólo que nunca las has aprendido.",
+            "Me alegra que asistieras a tu reunión familiar diaria.",
+            "Primero deberías dejar de usarla como un plumero.",
+            "Qué apropiado, tú peleas como una vaca.",
+            "Ya te están fastidiando otra vez las almorranas, ¿eh?",
+            "Ah, ¿ya has obtenido ese trabajo de barrendero?",
+            "Y yo tengo un SALUDO para ti, ¿te enteras?",
+            "Te habrá enseñado todo lo que sabes.",
+            "¿TAN rápido corres?"};
+
+        if (insults.length != respostesJugador.length) {
+            System.err.println("Els arrays d'insults i respostes han de tenir la mateixa mida.");
+            return;
+        }
+
+        System.out.println("Quantes rondes vols jugar? Si vols sortir prem 0");
+        int rondes = sc.nextInt();
+
+        if (rondes < 0) {
+            System.out.println("El nombre de rondes ha de ser positiu.");
+            return;
+        } else if (rondes == 0) {
+            System.out.println("Fins aviat!");
+            return;
+        }
+
+        // Prepare a shuffled list of insult indexes so each insult appears once before repeating
+        List<Integer> indices = new ArrayList<>();
+        for (int i = 0; i < insults.length; i++) indices.add(i);
+        Collections.shuffle(indices, rnd);
+        int used = 0;
+
+        System.out.println("Començem el Joc");
+        for (int round = 0; round < rondes && continuacio != 'n' && vides > 0; round++) {
+            // If we've used all insults, reshuffle to avoid immediate repeats
+            if (used >= indices.size()) {
+                Collections.shuffle(indices, rnd);
+                used = 0;
+            }
+            int correctIdx = indices.get(used++);
+            System.out.println("Pirata: " + insults[correctIdx]);
+
+            // choose two distinct incorrect indexes
+            int wrong1, wrong2;
+            do { wrong1 = rnd.nextInt(respostesJugador.length); } while (wrong1 == correctIdx);
+            do { wrong2 = rnd.nextInt(respostesJugador.length); } while (wrong2 == correctIdx || wrong2 == wrong1);
+
+            // build options (only using the two arrays) and shuffle them
+            List<String> options = new ArrayList<>();
+            options.add(respostesJugador[correctIdx]);
+            options.add(respostesJugador[wrong1]);
+            options.add(respostesJugador[wrong2]);
+            Collections.shuffle(options, rnd);
+
+            // show options
+            System.out.println("Tria la teva resposta!");
+            for (int j = 0; j < options.size(); j++) {
+                System.out.println((j + 1) + ") " + options.get(j));
+            }
+
+            int respostaJugador;
+            try {
+                respostaJugador = sc.nextInt();
+            } catch (Exception e) {
+                System.out.println("Entrada invàlida, intenta-ho de nou.");
+                sc.nextLine();
+                round--; // repeat this round
+                continue;
+            }
+            if (respostaJugador < 1 || respostaJugador > 3) {
+                System.out.println("Opció invàlida. Has d'escollir 1, 2 o 3.");
+                round--;
+                continue;
+            }
+
+            String escollida = options.get(respostaJugador - 1);
+            if (escollida.equals(respostesJugador[correctIdx])) {
+                System.out.println("Correcte!");
+            } else {
+                vides--;
+                System.out.println("Incorrecte! Vides restants: " + vides);
+            }
+        }
+
+        System.out.println("Fi del joc.");
+        // ...existing code...
+    }
+
+}
